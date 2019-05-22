@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+			
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
@@ -55,9 +55,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_custom_logo();
 					} ?><!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+
+	
+
+
+
+				
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -65,16 +68,44 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
+
+				<div class="search-section">
+					<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+					<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'understrap' ); ?></label>
+					<div class="input-group">
+						<input class="field form-control" id="s" name="s" type="text"
+							placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php the_search_query(); ?>">
+						<span class="input-group-append">
+							<input class="submit btn btn-primary" id="searchsubmit"  type="submit"
+							value="&#xf002;">
+						</span>
+					</div>
+				</form>
+
+				</div>
+
+				<div class="second-header">
+					<h1>This sis a egdbihebdbiudhideh</h1>
+				</div>
+
+				<div>
+				
+				
+				</div>
+
+
+
+
+					<!-- The WordPress 2nd Menu goes here -->
+		
+
 
 		</nav><!-- .site-navigation -->
 
