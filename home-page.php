@@ -37,16 +37,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 									
 					<?php endwhile; // end of the loop. ?>
+
+
+
+
+
+
+
+
+
+
+                    
 				</main><!-- #main -->
 			</div><!-- #primary -->
         </div><!-- .row end -->
     </div>    
 </div>        
 
-    <div id="explore-bizbom">
-        <div class="explore-bizbom-container">
-            <h2>Explore Bizbom</h2>
-        </div>
+        <div id="explore-bizbom">
+            <div class="explore-bizbom-container">
+                <h2>Explore Bizbom</h2>
+            </div>
             <button id="explore-view-all">
                 View All
             </button>
@@ -55,6 +66,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
+
+
+
+
+<div class="wrapper" id="full-width-page-wrapper">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+		<div class="row">
+			<div class="col-md-12 content-area" id="primary">
+				<main class="site-main" id="main" role="main">
+
+
+
+<h1>Success</h1>
+
         <div class="sports-boxes">
             <?php if( have_rows('sport_boxes') ): ?>
 
@@ -62,7 +87,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<?php while( have_rows('sport_boxes') ): the_row(); 
 
-		// vars
 		$image = get_sub_field('image');
 		$title = get_sub_field('title');
 		$link = get_sub_field('link');
@@ -70,7 +94,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		?>
 
 		<li>
-
 			<?php if( $link ): ?>
 				<a href="<?php echo $link; ?>">
 			<?php endif; ?>
@@ -99,6 +122,110 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    </ul>
     <?php endif; ?>
 </div><!-- end sport-boxes -->
+
+
+
+	            </main><!-- #main -->
+			</div><!-- #primary -->
+        </div><!-- .row end -->
+    </div>    
+</div>        
+
+
+
+
+
+<div id="how-works-bizbom">
+    
+      <div class="how-works-bizbom-container">
+        <h2>
+          How it works&nbsp; &nbsp; &nbsp; &nbsp;</h2>
+    </div>   
+  
+  <button id="how-works-sign-up">
+      Sign Up
+    </button>
+  
+  </div>
+
+
+
+
+<div class="wrapper" id="full-width-page-wrapper">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+		<div class="row">
+			<div class="col-md-12 content-area" id="primary">
+				<main class="site-main" id="main" role="main">
+
+<div class="step-boxes">
+    <?php if( have_rows('step_boxes') ): ?>
+
+	<ul>
+
+	<?php while( have_rows('step_boxes') ): the_row(); 
+
+		// vars
+		$image = get_sub_field('image');
+		$title = get_sub_field('title');
+		$link = get_sub_field('link');
+		$text = get_sub_field('text');
+		?>
+
+		<li>
+
+		<?php if( $link ): ?>
+				<a href="<?php echo $link; ?>">
+			<?php endif; ?>
+				<img src="<?php echo $image; ?>" alt="<?php echo $image['alt'] ?>" />
+			<?php if( $link ): ?>
+				</a>
+			<?php endif; ?>
+
+            <?php if( $link ): ?>
+                <a href="<?php echo $link; ?>">
+                <?php endif; ?>
+                    <?php echo $title; ?>
+                <?php if( $link ): ?>
+                </a>
+			<?php endif; ?>
+			
+			<p><?php echo $text; ?></p>
+
+		</li>
+
+	<?php endwhile; ?>
+
+	</ul>
+
+<?php endif; ?>
+
+
+<div class="wrapper" id="full-width-page-wrapper">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+		<div class="row">
+			<div class="col-md-12 content-area" id="primary">
+				<main class="site-main" id="main" role="main">
+
+    <h2>In here lads 02.....</h2>
+
+
+	            </main><!-- #main -->
+			</div><!-- #primary -->
+        </div><!-- .row end -->
+    </div>    
+</div>        
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

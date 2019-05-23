@@ -63,7 +63,34 @@
     overflow: hidden;
     border: 2px solid grey;
     list-style: none;
-    width: 25%; 
+    // width: 25%; 
+    width: 32%;
     border-radius: 15px;
     margin: 10px 5px;
+}
+
+.sports-boxes ul li img{
+  float: left;
+  width: 12%;
+}
+
+//Step Boxes?
+.step-boxes ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step-boxes ul li{
+    overflow: hidden;
+    border: 2px solid grey;
+    list-style: none;
+    // width: 25%; 
+    width: 49%;
+    border-radius: 15px;
+    margin: 10px 5px;
+}
+
+.step-boxes ul li img{
+  // float: left;
+  // width: 12%;
 }
