@@ -10,11 +10,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }?>
-<div class="banner-footer"> 
-
-<h1>Create A Free Account Today</h1>
-
-</div>
 
 				</div><!--col end -->
 			</div><!-- row end -->
@@ -24,40 +19,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-<?php dynamic_sidebar('Footer Left'); ?> 
-<?php dynamic_sidebar('Footer Right'); ?> 
+<div id="banner-footer-image" style="background-image: url(<?php the_field('background_image', 28); ?>);">
+	<div class="banner-footer"> 
+		<h1><?php the_field('footer_banner_text', 28); ?></h1>
+		<a href="<?php the_field('add_the_link', 28); ?>" target="_blank" class="sign-up">Sign Up Now</a>		
+	</div>
+</div>
+
+		
 
 
 
-<?php $container = get_theme_mod( 'understrap_container_type' );
-?>
-<div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
 
+
+	
+
+
+
+
+
+
+	<div class="footer">
 		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
-
-</div><!-- #page we need this extra closing tag here -->
+			<div class="col-md-2">
+				<?php dynamic_sidebar('Footer Left'); ?> 
+			</div>
+			<div class="col-md-6">
+				<?php dynamic_sidebar('Footer Right'); ?> 
+			</div>	
+		</div>
+	</div>	
 
 <?php wp_footer(); ?>
 
