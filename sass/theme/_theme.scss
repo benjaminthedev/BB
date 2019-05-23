@@ -1,1 +1,96 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// Header Section
+.bg-primary {
+	background-color: #EF700B !important;
+}
+.custom-logo-link {
+    width: 8%;
+    padding:0px;
+}
+.navbar{
+    padding: 0px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+//Search in the header
+#wrapper-navbar input {
+  &#s {
+    background-color: #f2f2f2;
+    color: #43454b;
+    border: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+  }
+  &#searchsubmit {
+    border: 0;
+    width: 100%;
+    background: #282727;
+    border-radius: 0 25px 25px 0;
+  }
+  &[type="submit"] {
+    font-family: FontAwesome;
+  }
+}
+
+// Second Section Header
+.second-header{
+    background: #38b6ff;
+    // height: 100%;
+    // align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%)!important;
+    // margin-left: 15%;
+}
+
+//Home Page Styles
+.home-page {
+  .wrapper, #content {
+    padding-top: 0px;
+  }
+}
+
+// Sports Boxes
+
+.sports-boxes ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sports-boxes ul li{
+    overflow: hidden;
+    border: 2px solid grey;
+    list-style: none;
+    // width: 25%; 
+    width: 32%;
+    border-radius: 15px;
+    margin: 10px 5px;
+}
+
+.sports-boxes ul li img{
+  float: left;
+  width: 12%;
+}
+
+//Step Boxes?
+.step-boxes ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step-boxes ul li{
+    overflow: hidden;
+    border: 2px solid grey;
+    list-style: none;
+    // width: 25%; 
+    width: 49%;
+    border-radius: 15px;
+    margin: 10px 5px;
+}
+
+.step-boxes ul li img{
+  // float: left;
+  // width: 12%;
+}

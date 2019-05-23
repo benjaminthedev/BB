@@ -9,13 +9,28 @@
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
-}
+}?>
+<div class="banner-footer"> 
 
-$container = get_theme_mod( 'understrap_container_type' );
+<h1>Create A Free Account Today</h1>
+
+</div>
+
+				</div><!--col end -->
+			</div><!-- row end -->
+		</div><!-- container end -->
+	</div><!-- wrapper end -->
+</div><!-- #page we need this extra closing tag here -->
+
+
+
+<?php dynamic_sidebar('Footer Left'); ?> 
+<?php dynamic_sidebar('Footer Right'); ?> 
+
+
+
+<?php $container = get_theme_mod( 'understrap_container_type' );
 ?>
-
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
-
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
