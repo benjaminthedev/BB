@@ -76,10 +76,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12 content-area" id="primary">
 				<main class="site-main" id="main" role="main">
 
-
-
-<h1>Success</h1>
-
         <div class="sports-boxes">
             <?php if( have_rows('sport_boxes') ): ?>
 
@@ -206,7 +202,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12 content-area" id="primary">
 				<main class="site-main" id="main" role="main">
 
-    <h2>In here lads 02.....</h2>
+    
 
 
 	            </main><!-- #main -->

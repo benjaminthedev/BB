@@ -1,3 +1,15 @@
+//Fonts Imported From Google
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+a, *{
+  font-family: 'Montserrat', sans-serif;
+}
+
 // Header Section
 .bg-primary {
 	background-color: #EF700B !important;
@@ -93,4 +105,79 @@
 .step-boxes ul li img{
   // float: left;
   // width: 12%;
+}  
+
+
+
+
+
+
+
+
+
+
+//Footer Section
+
+
+.footer{
+  background-color: #282727;
+  padding: 20px 0;
 }
+.footer h3{
+  color: #f58016;
+  text-transform: uppercase;
+}
+.footer a{
+  color:#fff;
+}
+.footer a:hover{
+  color: #f58016;
+}
+.footer hr{
+  color: #f58016;
+}
+.footer p{
+  color:#fff;
+}
+.footer span{
+  color: #f58016;
+}
+
+
+#banner-footer-image{
+  height:400px;
+  background-position: center;
+}
+
+.banner-footer {
+    width: 50%;
+}
+
+.banner-footer h1{
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 60%;
+    padding-top: 60px;
+    margin: 0 auto;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+a.sign-up {
+    background-color: #38b6ff;
+    font-weight:700;
+    padding: 15px 20px;
+    border-radius: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    width: 20%; 
+    text-align: center;   
+}
+
+
