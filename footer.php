@@ -40,16 +40,35 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-	<div class="footer">
+<div class="footer">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-md-3 p-0">
 				<?php dynamic_sidebar('Footer Left'); ?> 
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-8 offset-md-1 p-0">
 				<?php dynamic_sidebar('Footer Right'); ?> 
-			</div>	
+			</div>			
+		</div>
+		<div class="row">		  
+			<div class="col-md-12 p-3">
+				<hr />
+			</div>
+		</div>
+	<div class="copyright-section">	
+		<div class="row">		  
+			<div class="col-md-6 p-0">
+				<?php dynamic_sidebar('copyleft'); ?> 
+			</div>
+			<div class="col-md-6 p-0">
+				<div class="website-by">		
+					<?php dynamic_sidebar('websiteright'); ?> 
+				</div>
+			</div>			
+		   </div>	
 		</div>
 	</div>	
+</div>
 
 <?php wp_footer(); ?>
 
