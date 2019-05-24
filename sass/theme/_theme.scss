@@ -1,18 +1,25 @@
 //Fonts Imported From Google
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
+//Fonts
+$main-font: 'Montserrat', sans-serif;
+
+//Colours
+$orange-color: #EF700B;
+$white-color: #fff;
+
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-weight: 700;
 }
 
 a, *{
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
 }
 
 // Header Section
 .bg-primary {
-	background-color: #EF700B !important;
+	background-color: $orange-color !important;
 }
 .custom-logo-link {
     width: 8%;
@@ -22,7 +29,7 @@ a, *{
     padding: 0px;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: $white-color;
 }
 //Search in the header
 #wrapper-navbar input {
@@ -65,7 +72,6 @@ a, *{
 }
 
 // Sports Boxes
-
 .sports-boxes ul{
     display: flex;
     flex-wrap: wrap;
@@ -121,26 +127,40 @@ a, *{
 
 .footer{
   background-color: #282727;
-  padding: 20px 0;
+  padding: 100px 0;
 }
 .footer h3{
-  color: #f58016;
+  color: $orange-color;
   text-transform: uppercase;
-}
-.footer a{
-  color:#fff;
-}
-.footer a:hover{
-  color: #f58016;
+  margin-bottom: 30px;
+  font-size:26px;
+  letter-spacing: 1px;
 }
 .footer hr{
-  color: #f58016;
+   margin-top:50px;
+   border-top: 1px solid $orange-color;
 }
 .footer p{
-  color:#fff;
+  color: $white-color;
 }
 .footer span{
-  color: #f58016;
+  color: $orange-color;
+}
+
+//Menu
+ul#menu-main-menu {
+    margin-left: -40px;
+    margin-top: 20px;
+}
+.footer ul#menu-main-menu li{
+  text-align: left;
+  margin-bottom: 15px;
+}
+.footer ul#menu-main-menu li a{
+  color: $white-color;
+}
+.footer ul#menu-main-menu li a:hover{
+  color: $orange-color;
 }
 
 
@@ -154,9 +174,9 @@ a, *{
 }
 
 .banner-footer h1{
-    font-family: Montserrat,sans-serif;
+    font-family: $main-font;
     font-weight: 700;
-    color: #fff;
+    color: $white-color;
     font-size: 60px;
     text-transform: uppercase;
     text-align: center;
@@ -172,12 +192,31 @@ a.sign-up {
     font-weight:700;
     padding: 15px 20px;
     border-radius: 40px;
-    color: #fff;
+    color: $white-color;
     text-transform: uppercase;
     margin: 0 auto;
     display: block;
     width: 20%; 
     text-align: center;   
+    transition: 0.3s;
 }
 
+a.sign-up:hover{
+  text-decoration: none;
+  background-color:#f1cccc;
+}
 
+//Copyright Footer 
+.copyright-section{
+  font-size: 14px;
+}
+.website-by p {
+    float: right;
+    padding: 0px;
+}
+a.web-by {
+    color: $white-color;
+}
+a.web-by:hover {
+    color: $orange-color;
+}
