@@ -99,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
             <?php if( $link ): ?>
-                <a href="<?php echo $link; ?>">
+                <a href="<?php echo $link; ?>"class="sport">
                 <?php endif; ?>
                     <?php echo $title; ?>
                 <?php if( $link ): ?>
@@ -107,9 +107,9 @@ $container = get_theme_mod( 'understrap_container_type' );
             <?php endif; ?>
 
             <?php if( $link ): ?>
-                <a href="<?php echo $link; ?>">
+                <a href="<?php echo $link; ?>" class="cat">
                 <?php endif; ?>
-                    <h4>View Category</h4>
+                    View Category
                 <?php if( $link ): ?>
                 </a>
             <?php endif; ?>
@@ -178,14 +178,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
             <?php if( $link ): ?>
-                <a href="<?php echo $link; ?>">
+                <a href="<?php echo $link; ?>" class="step-heading">
                 <?php endif; ?>
                     <?php echo $title; ?>
                 <?php if( $link ): ?>
                 </a>
 			<?php endif; ?>
 			
-			<p><?php echo $text; ?></p>
+			<p class="step-text"><?php echo $text; ?></p>
 
 		</li>
 
