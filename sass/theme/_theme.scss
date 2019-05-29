@@ -38,7 +38,7 @@ a, *{
     color: #43454b;
     border: 0;
     -webkit-appearance: none;
-    box-sizing: border-box;
+    border-radius: 40px;
     font-weight: 400;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
   }
@@ -47,11 +47,16 @@ a, *{
     width: 100%;
     background: #282727;
     border-radius: 0 25px 25px 0;
+    left: -39px;
+    z-index: 3;
   }
   &[type="submit"] {
     font-family: FontAwesome;
   }
 }
+.search-section .input-group-append {
+    margin-left: -20px;
+  }
 
 // Second Section Header
 .second-header{
@@ -72,6 +77,10 @@ a, *{
 }
 
 // Sports Boxes
+.sports-boxes {
+    margin-top: 60px;
+}
+
 .sports-boxes ul{
     display: flex;
     flex-wrap: wrap;
@@ -79,20 +88,43 @@ a, *{
 
 .sports-boxes ul li{
     overflow: hidden;
-    border: 2px solid grey;
     list-style: none;
-    // width: 25%; 
-    width: 32%;
+    height: 90px; 
+    width: 30%;
     border-radius: 15px;
-    margin: 10px 5px;
+    margin: 15px 10px;
+    border: 1px solid #dad5d5;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
 }
 
 .sports-boxes ul li img{
   float: left;
-  width: 12%;
 }
 
-//Step Boxes?
+.sports-boxes ul li a.sport {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+.sports-boxes ul li a.cat {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+//Step Boxes
+.step-boxes {
+    margin-top: 60px;
+}
+
 .step-boxes ul{
     display: flex;
     flex-wrap: wrap;
@@ -100,24 +132,380 @@ a, *{
 
 .step-boxes ul li{
     overflow: hidden;
-    border: 2px solid grey;
-    list-style: none;
-    // width: 25%; 
-    width: 49%;
+    border: 1px solid #dad5d5;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+    list-style: none; 
+    width: 47%;
     border-radius: 15px;
-    margin: 10px 5px;
+    margin: 15px 12px;
 }
 
-.step-boxes ul li img{
-  // float: left;
-  // width: 12%;
-}  
+.step-heading {
+    text-align: center;
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.step-text {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
 
 
 
 
 
 
+
+//Exported CSS - Check To See If Needed
+#wcv-product-edit > div:nth-child(4) > div.wcv-product-type {
+  display: none!important
+}
+
+#enable_booking_types_section > div.booking_types-flex-child.bkap_help_class > img.fa {
+ 	width: 16px;
+  	height: 16px;
+}
+
+#gcal_tab > div.z-content-inner > p.notice.notice-warning > i {
+  	display: none;
+}
+
+#bkap_gcal_fields table th, #bkap_gcal_fields {
+    background-color: #fff;
+}
+
+#bkap_gcal_fields input[type="button"] {
+ 	display: flex;
+  	min-height: max-content;
+}
+
+#main > ul > li > a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+ display: none!important; 
+}
+
+.bru-storeheader-container {
+ 	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-column-gap: 30px;
+}
+
+.bru-storeheader-image {
+ 	margin-top: -70px; 
+}
+
+.bru-storeheader-description {
+}
+
+a {
+    color: #f48116;
+}
+
+
+button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt,button.alt:hover, input[type="button"].alt:hover, input[type="reset"].alt:hover, input[type="submit"].alt:hover, .button.alt:hover, .widget-area .widget a.button.alt:hover {
+	background: #f48116;
+}
+
+#masthead {
+	margin-bottom: 0px!important;
+}
+
+
+/* WC Menu Color */
+.wcv-navigation ul.menu.black {
+    background: #f48116;
+}
+
+/* Product page booking form */
+
+#bkap-booking-form, #bkap-price-box {
+	border: 0px!important
+}
+
+#show_time_slot {
+	padding-top: 30px;
+}
+
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+	background: #f48116;
+	color: white;
+}
+
+.ui-state-active {
+	 background: #f48116!important;
+	color: white!important;
+}
+
+.ui-datepicker-next, .ui-datepicker-prev {
+	color: white!important
+}
+
+/* Search form */
+
+input[type=search] {
+	border-radius: 40px
+}
+
+/* Breadcrumbs */
+.storefront-breadcrumb {
+	margin: 0px;
+	display: none;
+}
+
+#content {
+	padding-top: 20px;
+}
+
+/* Product Page Price */
+.single-product div.product p.price {
+	margin: 0;
+}
+
+/* Product Page Short Description */
+.woocommerce-product-details__short-description > p {
+	margin: 0;
+}
+
+/* Header */
+#page .site-header {
+	padding-top: 0px!important;
+}
+
+.custom-logo-link, .site-branding, .site-header-cart, .site-logo-anchor, .site-logo-link, .site-search {
+	margin-bottom: 0px!important;
+}
+
+/*Header Box Shadow*/
+.storefront-primary-navigation {
+	box-shadow: 0px 5px 8px #00000025;
+}
+
+/* Page Title */
+
+.entry-header {
+	padding-bottom: 20px!important;
+}
+
+.entry-title {
+	font-weight: 600;
+}
+
+/* Coach Dashboard Submenu */
+.wcv-navigation ul.menu.black li.active, .wcv-navigation ul.menu.black li a:hover {
+	background: #ff9d42;
+}
+
+/* Coach Profile */
+.wcv-header-container #inner-element {
+	left: 0%;
+	right: 0%;
+	min-width: 100%;
+	width: 100%;
+}
+
+.wcv-store-header {
+	height: 250px!important;
+}
+
+
+/* Product Page Booking Calendar */
+.book_start_date_label, .bkap_start_date > .booking_calender {
+	display: none;
+}
+
+
+
+#explore-bizbom, #how-works-bizbom {
+  margin-top: 30px!important;
+  margin-bottom: 30px!important;
+  display: flex;
+  height: max-content;
+}
+
+#how-works-bizbom {
+  flex-direction: row-reverse;
+}
+
+.explore-bizbom-container {
+  width: 42%;
+  background: #f48116!important;
+  color: white!important;
+  clip-path: polygon(0 0,100% 0, calc(100% - 35px) 100%,0% 100%)!important;
+  padding-left: 15%!important;
+  padding-top: 10px!important;
+}
+
+.how-works-bizbom-container {
+  width: 42%;
+  background: #f48116!important;
+  color: white!important;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 35px 100%)!important;
+  padding-left: 15%!important;
+  padding-top: 10px!important;
+}
+
+#explore-view-all {
+    background: #38b6ff;
+    padding-left: 55px;
+    clip-path: polygon(35px 0,100% 0, 100% 100%,0% 100%);
+  	color: white;
+  	text-transform: uppercase!important;
+  	margin-left: -20px;
+}
+
+#how-works-sign-up {
+    background: #38b6ff;
+    padding-right: 55px;
+    clip-path: polygon(0 0,calc(100% - 35px) 0, 100% 100%,0% 100%);
+  	color: white;
+  	text-transform: uppercase!important;
+  	margin-right: -20px;
+}
+
+.bru-header {
+    display: grid;
+    width: 100%;
+    background: url(http://localhost:8888/BizBom/wp-content/uploads/2019/03/aerobic-class-exercise-866021-1.jpg);
+    min-height: 240px;
+    align-content: center;
+    background-position: center;
+}
+
+
+footer {
+ display: none; 
+}
+
+#map_search {
+  display: flex;
+}
+
+#masthead, #page .site-header {
+	padding-top: 0px!important;
+}
+
+#menu-main-menu {
+	text-align: center;
+}
+
+.sp-header-row {
+    display: grid;
+    grid-template-columns: minmax(max-content, auto) 2fr 1fr 1fr 1fr;
+    align-items: center;
+  	column-gap: 0px;
+}
+
+.sp-header-active .sp-header-span-2 {
+ 	width: 100%; 
+}
+
+#masthead > div {
+ 	max-width: 100%!important;
+  	padding: 0px;
+}
+
+.widget_search form::before, .widget_product_search form::before {
+    display: none!important;
+}
+
+.widget_search form::after, .widget_product_search form::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    vertical-align: -.125em;
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    line-height: inherit;
+    vertical-align: baseline;
+    content: "\f002";
+    position: absolute;
+    top: 1.15em;
+    right: 1.15em;
+    line-height: 1;    
+  	color: #ffffff;
+}
+
+.widget_product_search form button[type=submit] {
+    border: 0;
+    clip: inherit;
+    -webkit-clip-path: none;
+    clip-path: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 15%;
+    word-wrap: normal!important;
+    top: 0;
+    right: 0;
+  	left: auto;
+    height: 100%;
+    background: #282727;
+    color: #ffffff00;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.cart-contents > span, .cart-contents > span > a {
+  display: none!important;
+}
+
+.site-header-cart .cart-contents {
+ 	padding: 0px!important; 
+}
+
+
+#masthead > div > div > div.sp-header-span-2.sp-header-post-2 {
+	height: 100%;
+    background: #38b6ff!important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%)!important;
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.widget.woocommerce.widget_shopping_cart {
+display: none!important;
+}
+
+#masthead > div > div > div:nth-child(4) {
+  	background: #38b6ff;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%)!important;
+    margin-left: 15%;
+}
+
+
+.site-header-cart .cart-contents::after {
+	height: auto!important;  
+}
+
+.secondary-navigation ul.menu a {
+    color: #282727;
+}
+
+@media (min-width: 768px) {
+  .site-header .site-branding img {
+      width: 135px;
+      border-radius: 0;
+  }
+}
+//Exported CSS - Check To See If Needed - END
 
 
 
