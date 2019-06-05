@@ -57,16 +57,62 @@ a, *{
 .search-section .input-group-append {
     margin-left: -20px;
   }
+//Main Menu
+ul#main-menu{
+  margin-left: 120px;
+}
+ul#main-menu li {
+    margin-right: 20px;
+}
+
+
+
+
+ul#menu-topnav-menu{
+  margin-top:-10px;
+}
+
+ul#menu-topnav-menu li{
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+} 
+
+ul#menu-topnav-menu li a{
+  color:#000;
+}
+
+//Search Header
+.search-section{
+  flex-grow: 0.4;
+}
+
+
 
 // Second Section Header
-.second-header{
-    background: #38b6ff;
+
+//.second-header::before{
+    // -webkit-clip-path: polygon(55% -20%,100% 100%,100% 0%);
+    // clip-path: polygon(55% -20%,100% 100%,100% 0%);
+    // background: #38b6ff;
+    // content: '';
+    // position: absolute;
     // height: 100%;
-    // align-items: center;
-    // display: flex;
-    // justify-content: center;
-    // clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%)!important;
-    // margin-left: 15%;
+    // width: 10%;
+    // right: 292px;
+    // top: 0px;
+    // overflow: hidden;    
+//}
+
+.second-header{
+    height: 8.8vh;
+    width: 40vh;
+    background: #38b6ff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%)!important;
+    margin-left: 2%; 
 }
 
 //Home Page Styles
@@ -536,7 +582,7 @@ display: none!important;
 }
 
 //Menu
-ul#menu-main-menu {
+.footer ul#menu-main-menu {
     margin-left: -40px;
     margin-top: 20px;
 }

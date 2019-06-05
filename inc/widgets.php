@@ -93,9 +93,23 @@ add_action( 'widgets_init', 'understrap_widgets_init' );
 
 if ( ! function_exists( 'understrap_widgets_init' ) ) {
 	/**
-	 * Initializes themes widgets.
+	 * Initializes themes widgets.  
 	 */
 	function understrap_widgets_init() {
+
+		register_sidebar(
+			array(
+				'name'          => __( 'TopNav Sidebar', 'understrap' ),
+				'id'            => 'topNav-sidebar',
+				'description'   => __( 'TopNav sidebar widget area', 'understrap' ),
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</aside>',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+
 		register_sidebar(
 			array(
 				'name'          => __( 'Right Sidebar', 'understrap' ),
