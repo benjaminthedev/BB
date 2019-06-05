@@ -92,7 +92,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 
 				<div class="second-header">
-					<h1>This sis a egdbihebdbiudhideh</h1>
+					<div class="second-header-content">
+						<?php dynamic_sidebar('TopNav Sidebar'); ?> 
+					</div>
 				</div>
 
 				<div>
