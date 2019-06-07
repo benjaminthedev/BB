@@ -58,18 +58,16 @@ a, *{
     margin-left: -20px;
   }
 //Main Menu
-ul#main-menu{
-  margin-left: 120px;
-}
-ul#main-menu li {
-    margin-right: 20px;
-}
-
-
-
-
-ul#menu-topnav-menu{
-  margin-top:-10px;
+ul {
+  &#main-menu {
+    margin-left: 120px;
+    li {
+      margin-right: 20px;
+    }
+  }
+  &#menu-topnav-menu {
+    margin-top: -10px;
+  }
 }
 
 ul#menu-topnav-menu li{
