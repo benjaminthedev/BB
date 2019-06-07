@@ -48,10 +48,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php
 						/**
 						 * Run the loop for the search to output the results.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-search.php and that will be used instead.
+							* If you want to overload this in a child theme then include a file
+							* called content-search.php and that will be used instead.
 						 */
 						get_template_part( 'loop-templates/content', 'search' );
+						//get_template_part( 'loop-templates/content', 'product' );
 						?>
 
 					<?php endwhile; ?>
