@@ -19,7 +19,7 @@ if ( ! defined( 'WC_PLUGIN_FILE' ) ) {
 	define( 'WC_PLUGIN_FILE', __FILE__ );
 }
 
-// Include the main WooCommerce class.
+Include the main WooCommerce class.
 if ( ! class_exists( 'WooCommerce' ) ) {
 	include_once dirname( __FILE__ ) . '/includes/class-woocommerce.php';
 }
@@ -34,5 +34,5 @@ function WC() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.Fu
 	return WooCommerce::instance();
 }
 
-// Global for backwards compatibility.
+Global for backwards compatibility.
 $GLOBALS['woocommerce'] = WC();
