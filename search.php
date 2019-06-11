@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							* called content-search.php and that will be used instead.
 						 */
 						get_template_part( 'loop-templates/content', 'search' );
-						//get_template_part( 'loop-templates/content', 'product' );
+						//	get_template_part( 'loop-templates/content', 'product' );
 						?>
 
 					<?php endwhile; ?>
