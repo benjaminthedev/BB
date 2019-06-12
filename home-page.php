@@ -21,33 +21,37 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <div id="banner-footer-image" style="background-image: url(<?php the_field('header_background'); ?>);">
-	<div class="banner-footer"> 
-
-<h1>or use this:</h1>		
-
-				<?php echo do_shortcode('[aws_search_form]'); ?>
-
-
-
-		<h1><?php the_field('header_title'); ?></h1>
-		<em>Search Function Here</em>	
+	<div class="header-footer"> 
+		<!-- was footer banner -->
+<div class="container">
+		<div class="col-12">
 				<div class="search-section">
-					<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-						<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'understrap' ); ?></label>
+
+		<h1>
+			<?php the_field('header_title'); ?>		
+			</h1>
+		
+
+				<!-- <div class="search-section">
+					<form method="get" id="searchform" action="<?php //echo esc_url( home_url( '/' ) ); ?>" role="search">
+						<label class="sr-only" for="s"><?php //esc_html_e( 'Search', 'understrap' ); ?></label>
 							<div class="input-group">
 								<input class="field form-control" id="s" name="s" type="text"
-									placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php the_search_query(); ?>">
+									placeholder="<?php //esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php //the_search_query(); ?>">
 								<span class="input-group-append">
 									<input class="submit btn btn-primary" id="searchsubmit"  type="submit"
 									value="&#xf002;">
 								</span>
 							</div>
 					</form>
+				</div> -->
+
+				<?php echo do_shortcode('[aws_search_form]'); ?>
 				</div>
 
+				</div>
+				</div>
 
-
-				
 		</div>
 </div>	
 
