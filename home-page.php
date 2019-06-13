@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <div id="banner-footer-image" style="background-image: url(<?php the_field('header_background'); ?>);">
-	<div class="header-footer"> 
+	<div class="header-search-section"> 
 		<!-- was footer banner -->
 <div class="container">
 		<div class="col-12">

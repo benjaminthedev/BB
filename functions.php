@@ -27,6 +27,21 @@ $understrap_includes = array(
 	'/deprecated.php',                      // Load deprecated functions.
 );
 
+/**
+ * Proper way to enqueue scripts and styles.
+ */
+function get_scripts() {
+		//Use as template if needed.
+		wp_enqueue_script( 'customJS', get_stylesheet_directory_uri() . '/js/custom.js', array(), '1.0.0', true );
+	
+	//Conditionally Loading The JS for single product
+	// if (is_product()) {
+	// 	wp_enqueue_script( 'customJSProductPage', get_stylesheet_directory_uri() . '/js/single-product.js', array(), '1.0.0', true );
+	// }
+  
+}
+add_action( 'wp_enqueue_scripts', 'get_scripts' );
+
 foreach ( $understrap_includes as $file ) {
 	$filepath = locate_template( 'inc' . $file );
 	if ( ! $filepath ) {
