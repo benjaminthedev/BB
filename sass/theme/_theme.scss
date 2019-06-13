@@ -54,6 +54,29 @@ a, *{
     font-family: FontAwesome;
   }
 }
+.header-search-section h1{
+    font-family: $main-font;
+    font-weight: 700;
+    color: $white-color;
+    font-size: 56px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 60%;
+    padding-top: 60px;
+    margin: 0 auto;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+.aws-search-btn.aws-form-btn {
+    background: #f58016 !important;
+}
+.aws-container .aws-search-form .aws-search-btn_icon{
+  color:#fff;
+}
+.aws-container {
+    width: 50%;
+    margin: 0 auto;
+}
 .search-section .input-group-append {
     margin-left: -20px;
   }
@@ -143,8 +166,11 @@ ul#menu-topnav-menu li a{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
 }
 
-.sports-boxes ul li img{
-  float: left;
+.sports-boxes ul li img {
+    float: left;
+    width: 40%;
+    background-size: contain;
+    height: 100%;
 }
 
 .sports-boxes ul li a.sport {
@@ -241,9 +267,6 @@ ul#menu-topnav-menu li a{
 
 .bru-storeheader-image {
  	margin-top: -70px; 
-}
-
-.bru-storeheader-description {
 }
 
 a {
@@ -548,6 +571,15 @@ display: none!important;
 //Exported CSS - Check To See If Needed - END
 
 
+
+//WooCommerce Styles
+
+.woocommerce #right-sidebar,
+.woocommerce span.posted-on,
+.woocommerce span.byline,
+.woocommerce div#comments{
+  display: none;
+}
 
 
 
