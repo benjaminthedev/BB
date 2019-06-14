@@ -49,3 +49,9 @@ foreach ( $understrap_includes as $file ) {
 	}
 	require_once $filepath;
 }
+
+add_filter( 'wcpv_vendor_slug', 'change_product_vendors_slug' );
+function change_product_vendors_slug() {
+return 'Coachy';
+}
+
