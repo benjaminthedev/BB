@@ -144,9 +144,9 @@ ul#menu-topnav-menu li a{
 }
 
 // Sports Boxes
-.sports-boxes {
-    margin-top: 60px;
-}
+// .sports-boxes {
+//     margin-top: 60px;
+// }
 
 .sports-boxes ul{
     display: flex;
@@ -191,9 +191,9 @@ ul#menu-topnav-menu li a{
 }
 
 //Step Boxes
-.step-boxes {
-    margin-top: 60px;
-}
+// .step-boxes {
+//     margin-top: 60px;
+// }
 
 .step-boxes ul{
     display: flex;
@@ -388,8 +388,8 @@ input[type=search] {
 
 
 #explore-bizbom, #how-works-bizbom {
-  margin-top: 30px!important;
-  margin-bottom: 30px!important;
+  // margin-top: 30px!important;
+  // margin-bottom: 30px!important;
   display: flex;
   height: max-content;
 }
@@ -568,6 +568,10 @@ display: none!important;
       border-radius: 0;
   }
 }
+
+i.fas.fa-star {
+    font-family: fontAwesome;
+}
 //Exported CSS - Check To See If Needed - END
 
 
@@ -577,7 +581,8 @@ display: none!important;
 .woocommerce #right-sidebar,
 .woocommerce span.posted-on,
 .woocommerce span.byline,
-.woocommerce div#comments{
+.woocommerce div#comments,
+.woocommerce-account #right-sidebar{
   display: none;
 }
 
