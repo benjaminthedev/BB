@@ -109,6 +109,113 @@ ul#menu-topnav-menu li a{
 }  
 
 
+// New Coach
+#profile-bg {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 40%;
+}
+.profile-info {
+    background: #f58016;
+    padding: 20px 0;
+    width: 50%;
+    top: 30%;
+    position: relative;
+}
+
+.profile-info h1{
+  color:#fff;
+  text-align: center;
+}
+
+.profile-info .profile-stars{
+  color:#fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.coach-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.coach-wrapper .right-box{
+    width:50%
+}
+
+.coach-wrapper .left-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.coach-wrapper img.coach-image {
+    top: -120px;
+    position: relative;
+    border-radius: 10px;
+    width: 80%;
+    clear: both;
+    border: 1px solid #f58016;
+    margin-bottom: -100px;
+}
+
+//coach profile 4 products or more
+
+.coach-profile-products ul.products.columns-4{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coach-profile-products ul.products.columns-4 li{
+      overflow: hidden;
+    border: 1px solid #dad5d5;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.45);
+    list-style: none;
+    width: 47%;
+    border-radius: 15px;
+    margin: 15px 12px;
+}
+.coach-profile-products ul.products.columns-4 li a img {
+    height: 360px;
+    background-size: contain;
+}
+
+
+
+.coach-profile-products ul.products.columns-4 li em.wcpv-sold-by-loop{
+  display: none;
+}
+
+.coach-profile-products ul.products.columns-4 li span.price{
+  text-align: center;
+  font-size:22px;
+}
+
+.coach-profile-products ul.products.columns-4 li .add-to-cart-container {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.coach-profile-products ul.products.columns-4 li h2.woocommerce-loop-product__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.coach-profile-products ul.products.columns-4 li .btn-outline-primary{
+  border:none;
+  background:none;
+  margin-top: -10px;
+}
+
+.coach-profile-products ul.products.columns-4 li .btn-outline-primary:hover{
+  color: green;
+}
+
+
 
 // Second Section Header
 
@@ -689,3 +796,158 @@ a.web-by {
 a.web-by:hover {
     color: $orange-color;
 }
+
+
+// Responsive Styles
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #banner-footer-image{
+    height: 320px;
+  }
+  .second-header,
+  .aws-container {
+    display: none !important;
+  }
+  div#explore-bizbom {
+    margin-top: -30px;
+  }
+  a.navbar-brand.custom-logo-link {
+    width: 40%;
+  }
+  .explore-bizbom-container h2,
+  .how-works-bizbom-container h2 {
+    font-size: 10px !important;
+    margin-left: -20px;
+  }  
+  .header-search-section h1{
+    font-size: 36px;
+    width: 80%;
+  }
+
+
+  .sports-boxes ul{
+    flex-direction: column;
+  }
+
+.sports-boxes ul li,
+   .step-boxes ul li{
+    width: 80%; 
+    }
+
+  .banner-footer {
+    width: 100%;
+  }
+
+  .banner-footer h1{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+   a.sign-up{
+     width:80%;
+   } 
+
+   .website-by p {
+    float: left;
+    padding: 0;
+  }
+
+  //Coach Profile
+  .profile-info {
+    background: #f58016;
+    padding: 20px 0;
+    width: 100%;
+    top:20%;
+  }
+  
+  .coach-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coach-wrapper .right-box {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .coach-profile-products ul.products.columns-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.coach-profile-products ul.products.columns-4 li{
+      margin: 0 1.4em 2em !important;
+      width: 90% !important;
+}
+
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .second-header,
+    .aws-container {
+    display: none;
+    }
+    div#explore-bizbom {
+    margin-top: -30px;
+  }
+  a.navbar-brand.custom-logo-link {
+    width: 40%;
+  }
+  .explore-bizbom-container h2,
+  .how-works-bizbom-container h2 {
+    font-size: 10px !important;
+    margin-left: -20px;
+  }
+  .header-search-section h1{
+    font-size: 36px;
+    width: 80%;
+  }
+
+
+  .sports-boxes ul{
+    flex-direction: column;
+  }
+
+   .sports-boxes ul li,
+   .step-boxes ul li{
+    width: 80%; 
+    }
+
+  .banner-footer {
+    width: 100%;
+  }
+
+  .banner-footer h1{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+   a.sign-up{
+     width:80%;
+   } 
+
+   .website-by p {
+    float: left;
+    padding: 0;
+  }
+
+
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #banner-footer-image{
+      height: 320px;
+    }
+  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
