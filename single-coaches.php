@@ -27,15 +27,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<h1><?php the_field('name'); ?></h1>
 		
 
-			<?php 
-			
-				$rating = get_field('start_rating');
-
+		<div class="profile-stars">	
+			<?php $rating = get_field('start_rating');
 				for ($i = 0; $i < $rating; $i++) { ?>
 					<i class="fas fa-star"></i>
-				<?php }
-			
-			?>
+			<?php } ?>
+		</div>
 	</div>
 </div>
 
@@ -49,25 +46,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 		<main class="site-main" id="main">
 
-			<h2><?php the_field('name'); ?></h2>
+			<div class="coach-wrapper">
 
-			<h2><?php the_field('start_rating'); ?></h2>
+			<div class="left-box">
 
-			<?php 
-			
-				$rating = get_field('start_rating');
+			<img src="<?php the_field('coach_image'); ?>" alt="Coach" class="coach-image"/>	
 
-				for ($i = 0; $i < $rating; $i++) { ?>
-					<i class="fas fa-star"></i>
-				<?php }
-			
-			?>
-
-			<h2><?php the_field('coach_number'); ?></h2>
+			<p><strong>Call: <?php the_field('coach_number'); ?></strong></p>
 
 			
 
-			<?php the_field('coach_text'); ?>
+			</div><!-- end left-box -->
+
+			
+			<div class="right-box">		
+				<?php the_field('coach_text'); ?>
+			</div><!-- end rightbox -->
+
+
+			</div><!-- end coach-wrapper -->
+
+
+
+
 			<div class="coach-profile-products">
 				<?php the_field('coach_products'); ?>
 			</div>
