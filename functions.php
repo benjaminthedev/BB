@@ -31,13 +31,29 @@ $understrap_includes = array(
  * Proper way to enqueue scripts and styles.
  */
 function get_scripts() {
-		//Use as template if needed.
-		wp_enqueue_script( 'customJS', get_stylesheet_directory_uri() . '/js/custom.js', array(), '1.0.0', true );
+	
+	wp_enqueue_script( 'customJS', get_stylesheet_directory_uri() . '/js/custom.js', array(), '1.0.0', true );
 	
 	//Conditionally Loading The JS for single product
-	// if (is_product()) {
-	// 	wp_enqueue_script( 'customJSProductPage', get_stylesheet_directory_uri() . '/js/single-product.js', array(), '1.0.0', true );
-	// }
+	if (is_product()) {
+		wp_enqueue_script( 'customJSProductPage', get_stylesheet_directory_uri() . '/js/product-page.js', array(), '1.0.0', true );
+	}
+
+	if(is_page(434)){
+		wp_enqueue_script( 'coachSignUp', get_stylesheet_directory_uri() . '/js/coach-sign-up-page.js', array(), '1.0.0', true );
+	}
+
+	if(is_page(54)){
+		wp_enqueue_script( 'map', get_stylesheet_directory_uri() . '/js/map-page.js', array(), '1.0.0', true );
+	}
+	
+	if(is_page(647)){
+		wp_enqueue_script( 'shopSingular', get_stylesheet_directory_uri() . '/js/shop-singular.js', array(), '1.0.0', true );
+	}
+
+	if ( get_post_type( get_the_ID() ) == 'coaches' ) {
+		wp_enqueue_script( 'coaches-cat', get_stylesheet_directory_uri() . '/js/coaches-cat.js', array(), '1.0.0', true );
+	}
   
 }
 add_action( 'wp_enqueue_scripts', 'get_scripts' );
