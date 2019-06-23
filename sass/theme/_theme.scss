@@ -21,10 +21,17 @@ a, *{
 .bg-primary {
 	background-color: $orange-color !important;
 }
-.custom-logo-link {
-    width: 8%;
-    padding:0px;
+// .custom-logo-link {
+//     width: 8%;
+//     padding:0px;
+// }
+
+.navbar-brand{
+  padding:0px;
+  margin-right:0px;
+  width:10%;
 }
+
 .navbar{
     padding: 0px;
 }
@@ -213,6 +220,83 @@ ul#menu-topnav-menu li a{
 
 .coach-profile-products ul.products.columns-4 li .btn-outline-primary:hover{
   color: green;
+}
+
+.page-id-54 div#ListContainer * {
+    line-height: 1.6rem;
+}
+
+.page-id-54 div#ListContainer h2{
+  font-size: 1.4rem
+}
+
+.infoWindowContainer a{
+  color: #000;
+}
+
+.single-coaches span.woocommerce-Price-amount.amount,
+span.woocommerce-Price-amount.amount {
+    font-size: 16px;
+    color: #000;
+}
+
+.wcpv-sold-by-loop, 
+.wcpv-sold-by-single{
+    display: none;
+}
+
+.single-product button.wc-bookings-booking-form-button.single_add_to_cart_button.button.alt {
+  background-color:#38b6ff;
+}
+
+.single-product .woocommerce-Tabs-panel h2,
+.single-product .related h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+section.related.products a.add_to_cart_button,
+input.wpcf7-form-control.wpcf7-submit,
+.btn-outline-primary,
+.add_to_cart_button{
+    background-color: #a46497 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.single-coaches a.add_to_cart_button.product_type_booking.single_add_to_cart_button.btn.btn-outline-primary.btn-block {
+    color: #f68e35;
+}
+
+.page-id-647 .add_to_cart_button {
+    background-color: #a46497;
+    color: #fff;
+    border: none;
+}
+
+
+//contact page
+.page-id-668 h1.entry-title {
+    text-align: center;
+}
+
+//Search Results
+.search-results article {
+    margin-bottom: 80px;
+}
+
+.search-results article {
+    float: left;
+    width: 24%;
+    margin-right: 15px;
+}
+
+.search-results div#right-sidebar {
+    display: none;
+} 
+
+input * {
+    padding: 20px 10px;
 }
 
 
@@ -802,6 +886,14 @@ a.web-by:hover {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+
+    #wrapper-navbar .search-section,
+    #wrapper-navbar ul#main-menu,
+    #wrapper-navbar .second-header{
+      display: none;
+    }
+
+
   #banner-footer-image{
     height: 320px;
   }
@@ -812,8 +904,8 @@ a.web-by:hover {
   div#explore-bizbom {
     margin-top: -30px;
   }
-  a.navbar-brand.custom-logo-link {
-    width: 40%;
+  a.navbar-brand {
+    width: 100%;
   }
   .explore-bizbom-container h2,
   .how-works-bizbom-container h2 {
@@ -882,11 +974,17 @@ a.web-by:hover {
       width: 90% !important;
 }
 
-
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+    #wrapper-navbar .search-section,
+    #wrapper-navbar ul#main-menu,
+    #wrapper-navbar .second-header{
+      display: none;
+    }
+
     .second-header,
     .aws-container {
     display: none;
@@ -894,9 +992,9 @@ a.web-by:hover {
     div#explore-bizbom {
     margin-top: -30px;
   }
-  a.navbar-brand.custom-logo-link {
-    width: 40%;
-  }
+.navbar-brand {
+    width: 100%;
+}
   .explore-bizbom-container h2,
   .how-works-bizbom-container h2 {
     font-size: 10px !important;
@@ -944,10 +1042,42 @@ a.web-by:hover {
     #banner-footer-image{
       height: 320px;
     }
+.navbar-brand {
+    width: 50%;
+}
+    #wrapper-navbar .search-section,
+    #wrapper-navbar ul#main-menu,
+    #wrapper-navbar .second-header{
+      display: none;
+    }
   }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+      .navbar-brand{
+        width:20%;
+      }
+    #wrapper-navbar .search-section,
+    #wrapper-navbar ul#main-menu,
+    #wrapper-navbar .second-header{
+      display: none;
+    }
+
+    .banner-footer h1{
+      font-size: 30px;
+      line-height: 40px;
+    }
+ }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) and (max-width: 1600px) {     
+  .navbar-brand{
+      width:20%;
+    }
+   .banner-footer h1{
+      font-size: 30px;
+      line-height: 40px;
+    }
+    
+  
+  }
