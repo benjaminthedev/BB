@@ -195,7 +195,17 @@ section.related.products {
     background-size: contain;
 }
 
+.coach-profile-products ul.products.columns-4 li:hover a{
+  color: #38b6ff!important;
+}
 
+.mailto:hover {
+  color: #38b6ff!important;
+}
+
+.coach-profile-products ul.products.columns-4 li:hover .add-to-cart-container a{
+  color: #fff!important;
+}
 
 .coach-profile-products ul.products.columns-4 li em.wcpv-sold-by-loop{
   display: none;
@@ -267,10 +277,18 @@ input.wpcf7-form-control.wpcf7-submit,
 .btn-outline-primary,
 .add_to_cart_button,
 button#place_order,
-a.btn.btn-primary.btn-lg.btn-block{
-    background-color: #a46497 !important;
+a.btn.btn-primary.btn-lg.btn-block,
+[type=button], [type=reset], [type=submit], button{
+    // background-color: #a46497 !important;
+    background-color: #38b6ff !important;
     color: #fff !important;
     border: none !important;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #000;
+    font-size: 1.25em;
+    margin-bottom: 20px !important;
 }
 
 .single-coaches a.add_to_cart_button.product_type_booking.single_add_to_cart_button.btn.btn-outline-primary.btn-block {
@@ -833,7 +851,7 @@ i.fas.fa-star {
   color: $white-color;
 }
 .footer ul#menu-main-menu li a:hover{
-  color: $orange-color;
+   color: #38b6ff!important;
 }
 
 
@@ -986,6 +1004,11 @@ a.web-by:hover {
       margin: 0 1.4em 2em !important;
       width: 90% !important;
 }
+
+.coach-profile-products a:hover h2.woocommerce-loop-product__title{
+  color: #38b6ff !important;
+}
+
    .search-results article {
     width:44%;
     margin-right: 15px;
