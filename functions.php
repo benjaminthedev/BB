@@ -47,6 +47,10 @@ function get_scripts() {
 		wp_enqueue_script( 'map', get_stylesheet_directory_uri() . '/js/map-page.js', array(), '1.0.0', true );
 	}
 	
+	if(is_page(28)){
+		wp_enqueue_script( 'shopSingular', get_stylesheet_directory_uri() . '/js/home-page.js', array(), '1.0.0', true );
+	}
+
 	if(is_page(647)){
 		wp_enqueue_script( 'shopSingular', get_stylesheet_directory_uri() . '/js/shop-singular.js', array(), '1.0.0', true );
 	}
@@ -71,3 +75,18 @@ function change_product_vendors_slug() {
 return 'Coachy';
 }
 
+//woocommerce_template_loop_add_to_cart
+
+add_action( 'woocommerce_product_meta_start', 'bbloomer_custom_action', 5 );
+ 
+function bbloomer_custom_action() {?>
+	<br />
+	<p class="by-coach">By: <a href="<?php the_field('add_coach_url'); ?>"><?php the_field('coach_name'); ?></a></p>
+<?php }
+
+add_action( 'woocommerce_after_shop_loop_item', 'bbloomer_custom_actions', 15 );
+ 
+function bbloomer_custom_actions() {?>
+	<br />
+	<p class="by-coach">By: <a href="<?php the_field('add_coach_url'); ?>"><?php the_field('coach_name'); ?></a></p>
+<?php }

@@ -117,6 +117,13 @@ ul#menu-topnav-menu li a{
 
 
 // New Coach
+.coaches-template-default p.by-coach,
+nav.container.navigation.post-navigation{
+  display: none;
+}
+section.related.products {
+    display: none;
+}
 #profile-bg {
     height: 400px;
     background-size: cover;
