@@ -412,11 +412,6 @@ input * {
     text-align: center;
 }
 
-//Step Boxes
-// .step-boxes {
-//     margin-top: 60px;
-// }
-
 .step-boxes ul{
     display: flex;
     flex-wrap: wrap;
@@ -452,7 +447,34 @@ input * {
     margin-top: 2px;
 }
 
+.wp-custom-logo #right-sidebar{
+	display:none;
+}
 
+.page-id-856 form#pms_new_subscription-form {
+  padding: 0px 10px;
+}
+
+.page-id-856 ul.pms-form-fields-wrapper {
+  margin-top: -130px;
+}
+
+.page-id-856 ul#pms-credit-card-information {
+  margin-top: -80px;
+	padding: 0px !important;
+}
+
+.page-id-856 ul.pms-field-section.pms-billing-details.pms-section-billing-details {
+  padding: 0px !important;
+}
+
+.pms-form > input[type=submit]{
+  background-color: #38b6ff!important;
+  color: #fff!important;
+  border: none!important;
+  padding:10px 20px;
+  margin-left: -12px;
+}
 
 //Exported CSS - Check To See If Needed
 #wcv-product-edit > div:nth-child(4) > div.wcv-product-type {
