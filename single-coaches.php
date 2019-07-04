@@ -54,6 +54,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<p><strong>Call: <?php the_field('coach_number'); ?></strong></p>
 
+			<p><strong>Coach Location: <?php the_field('coach_location'); ?></strong></p>
+
 			
 
 			</div><!-- end left-box -->

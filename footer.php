@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div id="banner-footer-image" style="background-image: url(<?php the_field('background_image', 28); ?>);">
 	<div class="banner-footer"> 
-		<h1><?php the_field('footer_banner_text', 28); ?></h1>
+		<h4><?php the_field('footer_banner_text', 28); ?></h4>
 		<a href="<?php the_field('add_the_link', 28); ?>" target="_blank" class="sign-up">Sign Up Now</a>		
 	</div>
 </div>

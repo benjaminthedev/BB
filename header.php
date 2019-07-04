@@ -77,17 +77,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 				); ?>
 
 				<div class="search-section">
-					<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-					<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'understrap' ); ?></label>
+					<!-- <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+					<label class="sr-only" for="s"><?php //esc_html_e( 'Search', 'understrap' ); ?></label>
 					<div class="input-group">
 						<input class="field form-control" id="s" name="s" type="text"
-							placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php the_search_query(); ?>">
+							placeholder="<?php //esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php //the_search_query(); ?>">
 						<span class="input-group-append">
 							<input class="submit btn btn-primary" id="searchsubmit"  type="submit"
 							value="&#xf002;">
 						</span>
 					</div>
-				</form>
+				</form> -->
+
+				<div class="new-search">
+					<?php echo do_shortcode('[aws_search_form]'); ?>
+				</div>
 
 				</div>
 

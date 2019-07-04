@@ -13,6 +13,71 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 
+
+// New styles start
+//4th July
+
+.new-search .aws-container{
+  width: 90%;
+  
+}
+.new-search .aws-container .aws-wrapper input.aws-search-field {
+    border-radius: 20px !important;
+    padding: 5px 20px;
+}
+
+
+.new-search .aws-search-btn.aws-form-btn {
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    margin-left: -40px !important;
+    z-index: 1000;
+}
+
+.getDirections{
+  display: none!important;
+}
+
+a:hover{
+  color:#000 !important;
+}
+.prettyMapList .map:after{
+  display: none !important;
+}
+
+// .woocommerce-MyAccount-content a
+
+input.button,
+.prettyMapList a.viewLocationPage.btn{
+     
+    border-radius: 5px !important;
+    padding: 10px 50px !important;
+    color: $white-color !important;
+    
+    background: none!important;
+    background-color: #38b6ff !important;
+    text-shadow: none;
+}
+
+input.button:hover{
+  color:#000 !important;
+}
+
+a.showFilterBtn.float_right.corePrettyStyle.btn,
+a.showSortingBtn.float_right.corePrettyStyle.btn {
+    background: none !important;        
+    background-color: #38b6ff !important; 
+    
+    border: none !important;
+    width: 200px !important;
+    
+    text-shadow: none !important;
+    color:#fff;
+}
+
+
+// New styles end
+
 a, *{
   font-family: $main-font;
 }
@@ -186,12 +251,14 @@ section.related.products {
     border: 1px solid #dad5d5;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.45);
     list-style: none;
-    width: 47%;
+    // width: 47%;
+    width:30%;
     border-radius: 15px;
     margin: 15px 12px;
 }
 .coach-profile-products ul.products.columns-4 li a img {
-    height: 360px;
+    // height: 360px;
+    height: 240px;
     background-size: contain;
 }
 
@@ -200,7 +267,7 @@ section.related.products {
 }
 
 .mailto:hover {
-  color: #38b6ff!important;
+  color: #000!important;
 }
 
 .coach-profile-products ul.products.columns-4 li:hover .add-to-cart-container a{
@@ -284,6 +351,13 @@ a.btn.btn-primary.btn-lg.btn-block,
     color: #fff !important;
     border: none !important;
 }
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+  width: 28%;
+}
+
+.wc-bookings-booking-form{
+  margin-top: 30px;
+}
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {
     color: #000;
@@ -313,7 +387,8 @@ a.btn.btn-primary.btn-lg.btn-block,
 }
 
 .search-results article {
-    width: 20%;
+    // width: 20%;
+    width: 30%;
     margin-right: 15px;
     display: inline-block;
 }
@@ -873,7 +948,7 @@ i.fas.fa-star {
   color: $white-color;
 }
 .footer ul#menu-main-menu li a:hover{
-   color: #38b6ff!important;
+   color: #000!important;
 }
 
 
@@ -886,7 +961,7 @@ i.fas.fa-star {
     width: 50%;
 }
 
-.banner-footer h1{
+.banner-footer h4{
     font-family: $main-font;
     font-weight: 700;
     color: $white-color;
