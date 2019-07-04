@@ -90,3 +90,30 @@ function bbloomer_custom_actions() {?>
 	<br />
 	<p class="by-coach">By: <a href="<?php the_field('add_coach_url'); ?>"><?php the_field('coach_name'); ?></a></p>
 <?php }
+
+//Remove Downloads
+add_filter( 'woocommerce_account_menu_items', 'custom_remove_downloads_my_account', 999 );
+ 
+function custom_remove_downloads_my_account( $items ) {
+unset($items['downloads']);
+unset($items['orders']);
+unset($items['dashboard']);
+return $items;
+}
+
+
+
+
+function custom_login_logo() {
+	?>
+<style type="text/css">
+body.login div#login h1 a {
+background-image: url('http://giddy-spiral.flywheelsites.com/wp-content/uploads/2019/06/logoBiz.jpg'); 
+padding-bottom: 30px;
+background-size: 150px;	
+	height: 84px;
+	width: 150px;
+}
+</style>
+<?php
+} add_action( 'login_enqueue_scripts', 'custom_login_logo' );
