@@ -13,6 +13,74 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 
+//5th July
+
+.boxes{
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 150px;
+  margin-bottom: 10px;  
+  width: 80%;
+
+  &__content{
+   
+    height: 150px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    transition: all 1.9s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+
+      &--front{
+        background-color: green;
+        display: flex;
+      }
+
+      &--back{
+        background-color: #EF700B;
+        display: flex;
+        transform: rotateX(180deg);
+
+      }
+  }    
+
+  &:hover &__content--front{
+    transform: rotateX(-180deg);
+  }
+
+    &:hover &__content--back{
+    transform: rotateX(0);
+  }
+
+
+}
+
+
+.step-boxes-slide-in li{
+
+
+
+  
+
+
+  &:hover{
+    background-color: yellow;
+
+    //Transform
+    transform: rotateX(180deg)
+  }
+
+}
+
+
+
+
+
 
 // New styles start
 //4th July

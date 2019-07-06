@@ -249,7 +249,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="athlete-section">
         <div id="explore-bizbom">
             <div class="explore-bizbom-container">
-                <h2>How it works athlete</h2>
+                <h2>How it works coaches</h2>
             </div>
             <button id="explore-view-all">
                 View All
@@ -258,30 +258,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>		
 
 
-
-
-
-
-<div class="wrapper" id="full-width-page-wrapper">
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+<!-- <div class="wrapper" id="full-width-page-wrapper">
+	<div class="<?php //echo esc_attr( $container ); ?>" id="content">
 		<div class="row">
 			<div class="col-md-12 content-area" id="primary">
-				<main class="site-main" id="main" role="main">
+				<main class="site-main" id="main" role="main"> -->
 
-<div class="step-boxes">
+<div class="step-boxes-slide-in">
     <?php if( have_rows('step_boxes_coaches') ): ?>
 
-	<ul>
+	
 
 	<?php while( have_rows('step_boxes_coaches') ): the_row(); 
 		// vars
+		$step_no = get_sub_field('step_number');
 		$image = get_sub_field('image');
 		$title = get_sub_field('title');
 		$link = get_sub_field('link');
 		$text = get_sub_field('text');
 		?>
 
-		<li>
+		
+	<div class="boxes">
+
+	<div class="boxes__content  boxes__content--front">
+	<h5>front</h5>
+		<p class="step-number"><?php echo $step_no; ?></p>
 
 		<?php if( $link ): ?>
 				<a href="<?php echo $link; ?>">
@@ -300,12 +302,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 			
 			<p class="step-text"><?php echo $text; ?></p>
+	</div>
 
-		</li>
+	<div class="boxes__content boxes__content--back">
+				<h5>back</h5>
+		<?php if( $link ): ?>
+			<a href="<?php echo $link; ?>">
+		<?php endif; ?>
+			Become A Coach Today
+		<?php if( $link ): ?>
+			</a>
+		<?php endif; ?>
+				
+	</div>
+
+</div>
 
 	<?php endwhile; ?>
 
-	</ul>
+	
 
 <?php endif; ?>
 
