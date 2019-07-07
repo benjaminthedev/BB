@@ -282,34 +282,39 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="boxes">
 
 	<div class="boxes__content  boxes__content--front">
-	<h5>front</h5>
+	
 		<p class="step-number"><?php echo $step_no; ?></p>
+	<div class="border01"></div>
+	
 
-		<?php if( $link ): ?>
-				<a href="<?php echo $link; ?>">
-			<?php endif; ?>
-				<img src="<?php echo $image; ?>" alt="<?php echo $image['alt'] ?>" />
-			<?php if( $link ): ?>
-				</a>
-			<?php endif; ?>
 
-            <?php if( $link ): ?>
-                <a href="<?php echo $link; ?>" class="step-heading">
-                <?php endif; ?>
-                    <?php echo $title; ?>
-                <?php if( $link ): ?>
-                </a>
+		<div class="wrapContentBoxes">
+         
+			<?php if( $title ): ?>
+				<h3 class="step-heading"><?php echo $title; ?></h3>                
 			<?php endif; ?>
 			
 			<p class="step-text"><?php echo $text; ?></p>
+		</div>	
+		
+
+
+
+			<?php if( $link ): ?>
+				<a href="<?php echo $link; ?>">
+			<?php endif; ?>
+				<img src="<?php echo $image; ?>" alt="<?php echo $image['alt'] ?>" class="icon_new"/>
+			<?php if( $link ): ?>
+				</a>
+			<?php endif; ?>
 	</div>
 
 	<div class="boxes__content boxes__content--back">
-				<h5>back</h5>
+			
 		<?php if( $link ): ?>
 			<a href="<?php echo $link; ?>">
 		<?php endif; ?>
-			Become A Coach Today
+			<a href="" class="boxes_link">Become A Coach Today</a>
 		<?php if( $link ): ?>
 			</a>
 		<?php endif; ?>

@@ -15,6 +15,56 @@ h1, h2, h3, h4, h5, h6{
 
 //5th July
 
+.step-boxes-slide-in {
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    align-items: center;
+}
+
+ 
+p.step-number {
+    font-size: 82px;
+    color: #fff;
+    margin: 0px 30px 0 100px;
+  }
+.border01 {
+    width: 10px;
+    border-right: 3px solid #fff;
+    height: 70%;
+    margin-top: 20px;
+}
+
+.wrapContentBoxes {
+    width: 70%;
+    margin: 0 40px;
+}
+img.icon_new {
+    width: 80px;
+    margin: 20px 40px;
+}
+
+.wrapContentBoxes p.step-text,
+.wrapContentBoxes .step-heading{
+  color:#fff !important;
+}
+
+.boxes_link{
+background-color: #38b6ff;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    text-align: center;
+    transition: .3s;
+    height: 55px;
+    margin-top: 30px;
+}
+
 .boxes{
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -25,10 +75,10 @@ h1, h2, h3, h4, h5, h6{
 
   &__content{
    
-    height: 150px;
+    height: 120px;
     list-style-type: none;
     margin-bottom: 10px;
-    transition: all 1.9s ease;
+    transition: all 1s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,13 +86,31 @@ h1, h2, h3, h4, h5, h6{
     backface-visibility: hidden;
     overflow: hidden;
 
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid #fff;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+  }
+  
+
       &--front{
-        background-color: green;
+        background-color: #ef700b;
         display: flex;
       }
 
+
+
+      
+
       &--back{
-        background-color: #EF700B;
+        background-color: #282727;
         display: flex;
         transform: rotateX(180deg);
 
@@ -59,27 +127,9 @@ h1, h2, h3, h4, h5, h6{
 
 
 }
-
-
-.step-boxes-slide-in li{
-
-
-
-  
-
-
-  &:hover{
-    background-color: yellow;
-
-    //Transform
-    transform: rotateX(180deg)
-  }
-
+ .boxes__content--front:nth-child(2) {
+        background-color: pink !important;
 }
-
-
-
-
 
 
 // New styles start
@@ -1179,11 +1229,20 @@ a.web-by:hover {
     margin-right: 15px;
     display: inline-block;
     }
+    .step-boxes-slide-in,
+  .athlete-section{
+    display: none;
+  }
 
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+  .step-boxes-slide-in,
+  .athlete-section{
+    display: none;
+  }
 
     #wrapper-navbar .search-section,
     #wrapper-navbar ul#main-menu,
@@ -1251,6 +1310,10 @@ a.web-by:hover {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .step-boxes-slide-in,
+  .athlete-section{
+    display: none;
+  }
     #banner-footer-image{
       height: 320px;
     }
@@ -1280,6 +1343,9 @@ a.web-by:hover {
     margin-right: 15px;
     display: inline-block;
     }
+    .step-boxes-slide-in{
+    display: none;
+  }
   }
 
 // Large devices (desktops, 992px and up)

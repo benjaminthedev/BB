@@ -12,3 +12,20 @@ howItWorks.addEventListener('click',
         window.location = "/my-account/";
     });
 
+//How it works btn coaches
+// 
+const viewAllNew = document.querySelector('.athlete-section');
+viewAllNew.addEventListener('click',
+    function () {
+        console.log('.athlete-section btn pressed');
+        window.location = "/coaches/";
+    });
+
+
+
+const boxesBG = document.querySelectorAll('.boxes__content--front');
+
+boxesBG[1].style.backgroundColor = "#38b6ff";
+boxesBG[3].style.backgroundColor = "#38b6ff";
+
+console.log(boxesBG);
