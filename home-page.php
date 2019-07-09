@@ -182,57 +182,72 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-<div class="wrapper" id="full-width-page-wrapper">
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-		<div class="row">
-			<div class="col-md-12 content-area" id="primary">
-				<main class="site-main" id="main" role="main">
 
-<div class="step-boxes">
+
+<div class="step-boxes-slide-in">
     <?php if( have_rows('step_boxes') ): ?>
 
-	<ul>
+	
 
 	<?php while( have_rows('step_boxes') ): the_row(); 
-
 		// vars
+		$step_no = get_sub_field('step_number');
 		$image = get_sub_field('image');
 		$title = get_sub_field('title');
 		$link = get_sub_field('link');
 		$text = get_sub_field('text');
 		?>
 
-		<li>
+		
+	<div class="boxes">
 
-		<?php if( $link ): ?>
-				<a href="<?php echo $link; ?>">
-			<?php endif; ?>
-				<img src="<?php echo $image; ?>" alt="<?php echo $image['alt'] ?>" />
-			<?php if( $link ): ?>
-				</a>
-			<?php endif; ?>
+	<div class="boxes__content  boxes__content--front">
+	
+		<p class="step-number"><?php echo $step_no; ?></p>
+	<div class="border01"></div>
+	
 
-            <?php if( $link ): ?>
-                <a href="<?php echo $link; ?>" class="step-heading">
-                <?php endif; ?>
-                    <?php echo $title; ?>
-                <?php if( $link ): ?>
-                </a>
+
+		<div class="wrapContentBoxes">
+         
+			<?php if( $title ): ?>
+				<h3 class="step-heading"><?php echo $title; ?></h3>                
 			<?php endif; ?>
 			
 			<p class="step-text"><?php echo $text; ?></p>
+		</div>	
+		
 
-		</li>
+
+
+			<?php if( $link ): ?>
+				<a href="<?php echo $link; ?>">
+			<?php endif; ?>
+				<img src="<?php echo $image; ?>" alt="<?php echo $image['alt'] ?>" class="icon_new"/>
+			<?php if( $link ): ?>
+				</a>
+			<?php endif; ?>
+	</div>
+
+	<div class="boxes__content boxes__content--back">
+			
+		<?php if( $link ): ?>
+			<a href="<?php echo $link; ?>">
+		<?php endif; ?>
+			<a href="" class="boxes_link">Become A Coach Today</a>
+		<?php if( $link ): ?>
+			</a>
+		<?php endif; ?>
+				
+	</div>
+
+</div>
 
 	<?php endwhile; ?>
 
-	</ul>
+	
 
 <?php endif; ?>
-
-
-
-
 
     
 
