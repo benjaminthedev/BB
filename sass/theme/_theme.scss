@@ -13,6 +13,12 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 
+//Dropdown style 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+} 
+
+
 //Stacey added css
 
 #responsive-menu-container #responsive-menu li.responsive-menu-item .responsive-menu-item-link, #responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item .responsive-menu-item-link {

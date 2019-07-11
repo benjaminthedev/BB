@@ -28,10 +28,3 @@ boxesBG[1].style.backgroundColor = "#38b6ff";
 boxesBG[3].style.backgroundColor = "#38b6ff";
 boxesBG[5].style.backgroundColor = "#38b6ff";
 boxesBG[7].style.backgroundColor = "#38b6ff";
-
-
-// [1, 3, 5, 7].array.forEach(element => {
-//     boxesBG.style.backgroundColor = "#38b6ff";
-// });
-
-// console.log(boxesBG);
