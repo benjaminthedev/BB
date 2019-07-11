@@ -23,19 +23,10 @@ viewAllNew.addEventListener('click',
 
 const boxesBG = document.querySelectorAll('.boxes__content--front');
 
-<<<<<<< HEAD
 //boxesBG[1].style.backgroundColor = "#38b6ff";
 //boxesBG[3].style.backgroundColor = "#38b6ff";
 //boxesBG[5].style.backgroundColor = "#38b6ff";
 //boxesBG[7].style.backgroundColor = "#38b6ff";
-=======
-
-boxesBG[1].style.backgroundColor = "#38b6ff";
-boxesBG[3].style.backgroundColor = "#38b6ff";
-boxesBG[5].style.backgroundColor = "#38b6ff";
-boxesBG[7].style.backgroundColor = "#38b6ff";
-
->>>>>>> 21e0cc5befcb64599de91ae70a11a0136fae6e8d
 
 // [1, 3, 5, 7].array.forEach(element => {
 //     boxesBG.style.backgroundColor = "#38b6ff";

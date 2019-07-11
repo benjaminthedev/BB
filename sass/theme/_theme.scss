@@ -1404,10 +1404,10 @@ a.web-by:hover {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-  .step-boxes-slide-in,
-  .athlete-section{
-    display: none;
-  }
+  // .step-boxes-slide-in,
+  // .athlete-section{
+  //   display: none;
+  // }
 
     #wrapper-navbar .search-section,
     #wrapper-navbar ul#main-menu,
@@ -1419,9 +1419,9 @@ a.web-by:hover {
     .aws-container {
     display: none;
     }
-    div#explore-bizbom {
-    margin-top: -30px;
-  }
+    // div#explore-bizbom {
+    // margin-top: -30px;
+  // }
 .navbar-brand {
     width: 100%;
 }
