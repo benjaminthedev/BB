@@ -1,0 +1,21 @@
+.woocommerce-form-login button{
+  margin-left: auto;
+}
+.woocommerce-checkout #payment ul.payment_methods .stripe-card-group, .wc-stripe-elements-field, .wc-stripe-iban-element-field {
+  width: 100%;
+}
+.step-boxes-slide-in .boxes:nth-of-type(odd) .boxes__content--front {
+  background: #38b6ff;
+}
+
+.menu-footer-container .menu {
+  padding: 0;
+  margin: 0;
+}
+.menu-footer-container .menu li a {
+  color: #ffffff;
+}
+.menu-footer-container .menu li a:hover, .menu-footer-container .menu li a:focus {
+  color: #ffffff !important;
+  text-decoration: underline;
+}

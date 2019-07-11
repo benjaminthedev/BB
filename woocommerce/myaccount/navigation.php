@@ -19,15 +19,19 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
+$user = wp_get_current_user();
 do_action( 'woocommerce_before_account_navigation' );
 ?>
 
 <nav class="woocommerce-MyAccount-navigation" role="navigation">
 	<div class="list-group">
 			<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
+			<?php if($endpoint === 'payment-methods' &&($user->roles[0] === 'wc_product_vendors_admin_vendor' || $user->roles[0] === 'wc_product_vendors_manager_vendor')): ?>
+			<?php continue; ?>
+			<?php else: ?>
 				<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"
 				   class="list-group-item list-group-item-action"><?php echo esc_html( $label ); ?></a>
+			<?php endif; ?>
 			<?php endforeach; ?>
 	</div>
 </nav>

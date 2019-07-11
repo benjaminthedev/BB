@@ -170,7 +170,9 @@ $container = get_theme_mod( 'understrap_container_type' );
     
       <div class="how-works-bizbom-container">
         <h2>
-          How it works Athletes &nbsp; &nbsp; &nbsp; &nbsp;</h2>
+
+          How it works athletes &nbsp; &nbsp; &nbsp; &nbsp;</h2>
+
     </div>   
   
   <button id="how-works-sign-up">
