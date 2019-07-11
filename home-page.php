@@ -170,7 +170,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     
       <div class="how-works-bizbom-container">
         <h2>
-          How it works&nbsp; &nbsp; &nbsp; &nbsp;</h2>
+          How it works athletes &nbsp; &nbsp; &nbsp; &nbsp;</h2>
     </div>   
   
   <button id="how-works-sign-up">
@@ -181,7 +181,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 
-
+<div id="newBoxeFindACoach">
 
 
 <div class="step-boxes-slide-in">
@@ -234,7 +234,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if( $link ): ?>
 			<a href="<?php echo $link; ?>">
 		<?php endif; ?>
-			<a href="" class="boxes_link">Become A Coach Today</a>
+			<a href="<?php echo $link; ?>" class="boxes_link">Find Your Coach</a>
 		<?php if( $link ): ?>
 			</a>
 		<?php endif; ?>
@@ -251,7 +251,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     
 
-
+</div>
 	            </main><!-- #main -->
 			</div><!-- #primary -->
         </div><!-- .row end -->
@@ -329,7 +329,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if( $link ): ?>
 			<a href="<?php echo $link; ?>">
 		<?php endif; ?>
-			<a href="" class="boxes_link">Become A Coach Today</a>
+		<a href="<?php echo $link; ?>" class="boxes_link">
+		Become A Coach Today</a>
 		<?php if( $link ): ?>
 			</a>
 		<?php endif; ?>

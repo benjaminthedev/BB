@@ -55,6 +55,10 @@ function get_scripts() {
 		wp_enqueue_script( 'shopSingular', get_stylesheet_directory_uri() . '/js/shop-singular.js', array(), '1.0.0', true );
 	}
 
+	if(is_page(14)){
+		wp_enqueue_script( 'coachDashboard', get_stylesheet_directory_uri() . '/js/coach-dashboard.js', array(), '1.0.0', true );
+	}
+
 	if ( get_post_type( get_the_ID() ) == 'coaches' ) {
 		wp_enqueue_script( 'coaches-cat', get_stylesheet_directory_uri() . '/js/coaches-cat.js', array(), '1.0.0', true );
 	}
