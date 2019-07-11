@@ -202,7 +202,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="boxes">
 
 	<div class="boxes__content  boxes__content--front">
-	
+	<svg class="triangle-cut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 60" preserveAspectRatio="none" width="100%" height="100%"><polygon fill="#ffffff" points="40 30 0 0 0 60 40 30"/></svg>
 		<p class="step-number"><?php echo $step_no; ?></p>
 	<div class="border01"></div>
 	
@@ -230,7 +230,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 
 	<div class="boxes__content boxes__content--back">
-			
+	<svg class="triangle-cut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 60" preserveAspectRatio="none" width="100%" height="100%"><polygon fill="#ffffff" points="40 30 0 0 0 60 40 30"/></svg>
 		<?php if( $link ): ?>
 			<a href="<?php echo $link; ?>">
 		<?php endif; ?>

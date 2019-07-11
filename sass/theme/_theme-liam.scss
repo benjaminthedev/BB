@@ -1,0 +1,101 @@
+.woocommerce-form-login button{
+  margin-left: auto;
+}
+.woocommerce-checkout #payment ul.payment_methods .stripe-card-group, .wc-stripe-elements-field, .wc-stripe-iban-element-field {
+  width: 100%;
+}
+.step-boxes-slide-in .boxes:nth-of-type(odd) .boxes__content--front {
+  background: #38b6ff;
+}
+
+.menu-footer-container .menu {
+  padding: 0;
+  margin: 0;
+}
+.menu-footer-container .menu li a {
+  color: #ffffff;
+}
+.menu-footer-container .menu li a:hover, .menu-footer-container .menu li a:focus {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.step-boxes-slide-in {
+  display: flex !important;
+}
+.boxes__content {
+  height: auto;
+  min-height: 120px;
+  position: relative;
+}
+.boxes {
+  height: auto;
+  svg.triangle-cut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+  }
+}
+.boxes__content--back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border01 {
+  height: 80px;
+}
+@media (max-width:1200px) {
+  .boxes__content--front {
+      flex-flow: row wrap;
+      justify-content: center;
+  }
+  .boxes svg.triangle-cut {
+    display: none;
+  }
+  p.step-number {
+  flex: 0 0 calc(50% - 130px);
+  order: 0;
+  }
+  .boxes__content--front a {
+      flex: 0 0 48%;
+      order: 1;
+      text-align: right;
+  }
+  .wrapContentBoxes {
+      flex: 0 0 80%;
+      order: 2;
+  }
+  .explore-bizbom-container, .how-works-bizbom-container {
+    width: 80%;
+  }
+}
+
+@media (max-width:650px) {
+  .boxes__content--front {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  p.step-number {
+    flex: 0 0 100%;
+    order: 0;
+    text-align: center;
+    margin: 0;
+  }
+  .boxes__content--front a {
+    flex: 0 0 100%;
+    order: 1;
+    text-align: center;
+  }
+  .wrapContentBoxes {
+    flex: 0 0 90%;
+    order: 2;
+  }
+  .border01 {
+    display: none;
+  }
+}
